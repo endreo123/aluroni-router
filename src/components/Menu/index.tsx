@@ -15,7 +15,9 @@ export default function Menu() {
     }];
     return (
         <nav className={styles.menu}>
-            <Logo />
+            <Link to='/'>
+                <Logo />
+            </Link>
             <ul className={styles.menu__list}>
                 {rotas.map((rota, index) => (
                     <li key={index} className={styles.menu__link}>
